@@ -1,0 +1,11 @@
+Package: TransmitTestandCull
+Type: Package
+Title: Stochastic Disease Transmission Simulation Model With Application Of A Diagnostic Test At Defined Times And Subsequent Culling
+Version: 1.0.0
+Date: 2025-03-11
+Author: David Ewing
+Maintainer: David Ewing <david.ewing@bioss.ac.uk>
+Description: The function simulates a stochastic SEIR disease transmission model with gamma distributed latent and infectious periods. At pre-defined times a diagnostic test is applied with sensitivity and specificity inputted by the user. Following testing all positive animals are culled. The population is restocked to the initial population size at regular predefined intervals.
+License: MIT
+Imports: Rcpp (>= 1.0.12)
+LinkingTo: Rcpp
