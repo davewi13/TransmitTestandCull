@@ -371,7 +371,7 @@ DataFrame simulate_OPA(List params, double Tmax) {
   }
   
   // Remove the NA values from the vectors
-  int valid_size = std::min(std::min(Exposure.size(), Infection.size()), std::min(Removal.size(), Incorrect.size()));
+  int valid_size = next_free_index;
   NumericVector valid_Exposure(valid_size);
   NumericVector valid_Infection(valid_size);
   NumericVector valid_Removal(valid_size);
