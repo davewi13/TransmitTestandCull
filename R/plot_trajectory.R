@@ -15,7 +15,11 @@ plot_trajectory <- function(temporal_infections,
   # Apply the function to extend the time series
   temporal_infections <- extend_data(temporal_infections, time_interval = time_between_scans, max_time = Tmax)
   temporal_infections <- temporal_infections[order(temporal_infections$Iteration),]
-  testtimes <- seq(0,Tmax,time_between_scans)
+  if(length(time_between_scans) == 1){
+    testtimes <- seq(0, Tmax, by = time_between_scans)
+  } else {
+    testtimes <- time_between_scans
+  }
   medians <- numeric(length(testtimes))
   ucl <- numeric(length(testtimes))
   lcl <- numeric(length(testtimes))
