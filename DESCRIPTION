@@ -9,3 +9,5 @@ Description: The function simulates a stochastic SEIR disease transmission model
 License: MIT
 Imports: Rcpp (>= 1.0.12)
 LinkingTo: Rcpp
+URL: https://github.com/davewi13/TransmitTestandCull
+BugReports: https://github.com/davewi13/TransmitTestandCull/issues
