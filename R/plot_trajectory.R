@@ -52,20 +52,14 @@ plot_trajectory <- function(temporal_infections,
   
   } else {
     # Apply the function to extend the time series
-    temporal_infections <- extend_data(temporal_infections, time_interval = time_between_scans, max_time = Tmax)
     if(length(time_between_scans) == 1){
       testtimes <- seq(0, Tmax, by = time_between_scans)
     } else {
       testtimes <- time_between_scans
     }
-    for(i in 1:length(testtimes)){
-      thistime <- temporal_infections[which(temporal_infections$Time == testtimes[i])-1,]
-      prevs <- (thistime$Exposures+thistime$Infections)/thistime$Pop.Size
-      prevs[is.na(prevs)] <- 0
-    }
     
     p.temp <- ggplot(temporal_infections, aes(x=Time/365)) +
-      geom_line(aes(y=(Exposures+Infections)/Pop.Size, col="Total", group=Iteration), alpha=0.05) +
+      geom_line(aes(y=(Exposures+Infections)/Pop.Size, col="Total")) +
       ylab("Prevalence") +
       xlab("Time (Years)") +
       xlim(-100/365,min(Tmax/365,max(temporal_infections$Time/365))) +
