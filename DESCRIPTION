@@ -13,7 +13,7 @@ Imports:
     dplyr,
     tidyr,
     purrr,
-    doParallel
+    parallel
 LinkingTo: Rcpp
 URL: https://github.com/davewi13/TransmitTestandCull
 BugReports: https://github.com/davewi13/TransmitTestandCull/issues

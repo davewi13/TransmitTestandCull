@@ -1,7 +1,6 @@
 #' @import dplyr
-#' @import tidyr
-#' @import doParallel
 #' @import purrr
+#' @import parallel
 #' @export
 run_parameter_combo <- function(params,
                                 parname1, parname2,
@@ -43,8 +42,6 @@ run_parameter_combo <- function(params,
   clusterExport(cl, varlist = c("parlist", "Tmax"))
   clusterEvalQ(cl, {
     library(TransmitTestandCull)
-    library(dplyr)
-    library(tidyr)
   })
   
   # Decide how to sample based on whether the parameters to vary are continuous or discrete
