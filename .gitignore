@@ -5,3 +5,6 @@
 .DS_Store
 .quarto
 .o
+
+analysis/test_and_cull_paper1/Results/
+analysis/test_and_cull_paper1/Data/

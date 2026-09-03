@@ -1,4 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^TransmitTestandCull\\.Rcheck$
-^\\.tar\\.gz$$
+^\\.tar\\.gz$
+^analysis$
