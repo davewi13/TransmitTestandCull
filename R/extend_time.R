@@ -1,3 +1,6 @@
+#' @import dplyr
+#' @import tidyr
+#' @export
 extend_data <- function(df, time_interval = 182.5, max_time = 3650) {
   # Generate a complete set of time points up to the maximum time
   if(length(time_interval) == 1){

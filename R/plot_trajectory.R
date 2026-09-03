@@ -1,3 +1,4 @@
+#' @import ggplot2
 #' @export
 plot_trajectory <- function(temporal_infections,
                             Tmax,

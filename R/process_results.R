@@ -1,3 +1,6 @@
+#' @import dplyr
+#' @import tidyr
+#' @export
 process_results <- function(infections, N0, time_between_restocking) {
   # This function takes the data frame of exposure, infection and removal times from simulate_OPA() and reformats it to give a single column for time with counts of exposures, infections and removals
   # INPUTS:

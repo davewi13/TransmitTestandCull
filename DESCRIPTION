@@ -7,7 +7,11 @@ Author: David Ewing
 Maintainer: David Ewing <david.ewing@bioss.ac.uk>
 Description: The function simulates a stochastic SEIR disease transmission model with gamma distributed latent and infectious periods. At pre-defined times a diagnostic test is applied with sensitivity and specificity inputted by the user. Following testing all positive animals are culled. The population is restocked to the initial population size at regular predefined intervals.
 License: MIT
-Imports: Rcpp (>= 1.0.12)
+Imports: 
+    Rcpp (>= 1.0.12),
+    ggplot2,
+    dplyr,
+    tidyr
 LinkingTo: Rcpp
 URL: https://github.com/davewi13/TransmitTestandCull
 BugReports: https://github.com/davewi13/TransmitTestandCull/issues

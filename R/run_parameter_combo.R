@@ -1,3 +1,7 @@
+#' @import dplyr
+#' @import tidyr
+#' @import doParallel
+#' @import purrr
 #' @export
 run_parameter_combo <- function(params,
                                 parname1, parname2,
