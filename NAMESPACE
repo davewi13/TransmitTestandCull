@@ -1,3 +1,8 @@
 useDynLib(TransmitTestandCull, .registration=TRUE)
 importFrom(Rcpp, evalCpp)
 exportPattern("^[[:alpha:]]+")
+import(ggplot2)
+import(dplyr)
+import(tidyr)
+import(purrr)
+import(doParallel)

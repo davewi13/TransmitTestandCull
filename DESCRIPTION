@@ -11,7 +11,10 @@ Imports:
     Rcpp (>= 1.0.12),
     ggplot2,
     dplyr,
-    tidyr
+    tidyr,
+    purrr,
+    doParallel
 LinkingTo: Rcpp
 URL: https://github.com/davewi13/TransmitTestandCull
 BugReports: https://github.com/davewi13/TransmitTestandCull/issues
+RoxygenNote: 7.3.2
